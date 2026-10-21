@@ -38,8 +38,7 @@ Requires JDK 17+ and the Android SDK.
 ./gradlew assembleDebug
 ```
 
-The APK is written to `app/build/outputs/apk/debug/app-debug.apk`. A GitHub Actions workflow (`.github/workflows/build.yml`) builds it on every push and uploads it as an artifact.
-
+The APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 `gradle.properties` points `aapt2` to the Termux binary for on-device builds. Remove that line when building on a regular machine or in CI.
 
 ## Notes
